@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Quiz Conhecimentos Básicos de um Computador</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/11251770-computador-desktop-monitor-dos-desenhos-animados-icone-ilustracaoial-tecnologia-objeto-icone-conceito-isolado-premium-estilo-de-desenho-animado-plano-vetor.jpg">
+</head>
+<body>
+    <main id="intro">
+        <h1>Bem-vindo</h1>
+        <p>Teste seus conhecimentos sobre o conteúdo apresentado.</p>
+        <input type="text" id="nome-usuario" placeholder="Digite seu nome">
+        <button id="start-quiz">Começar o Quiz</button>
+        <p id="erro-nome" style="color: red; display: none;">Por favor, insira seu nome.</p>
+    </main>
+    <main id="quiz" style="display: none;">
+        <section id="questoes-quiz">
+            <aside id="barra"></aside>
+            <article id="nivel">
+                <h2 id="nivel-texto"></h2>
+            </article>
+            <p id="pergunta-texto"></p>
+            <hr>
+
+            <article id="opcoes" class="opcoes">
+                <!-- Opções serão geradas aqui pelo JavaScript -->
+            </article>
+        </section>
+        <button id="submit">Próxima Questão</button>
+    </main>
+
+    <!-- Tela de Vitória -->
+    <section class="victory" id="victory">
+        <h1>Parabéns! Você venceu! Foi longe!</h1>
+        <img src="img/dog-smile-shyboos.gif" alt="Gif de vitória">
+        <button class="button-retry" id="retry-victory">Tentar Novamente</button>
+    </section>
+
+    <!-- Tela de Perda -->
+    <section class="loss" id="loss">
+        <h1>Que pena! Você perdeu!</h1>
+        <img src="img/piesek-pies.gif" alt="Gif de perda">
+        <button class="button-retry" id="retry">Tentar Novamente</button>
+    </section>
+
+    <!-- Importando o arquivo JavaScript -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
