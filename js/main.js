@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             opcoesContainer.appendChild(input);
             opcoesContainer.appendChild(label);
-            // temporizador()
+            temporizador()
         });
     }
 
