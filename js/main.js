@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             opcoesContainer.appendChild(input);
             opcoesContainer.appendChild(label);
-            temporizador()
+            //temporizador()
         });
     }
 
@@ -304,8 +304,6 @@ document.addEventListener("DOMContentLoaded", () => {
         botaoSubmit.onclick = function() {
             clearInterval(intervalo);
             proximaQuestao();
-            // console.log(perguntasFeitas.index.value)
-            // console.log(perguntaSelecionada.numero)
         };
     }
 
@@ -345,14 +343,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         if (pontuacao === perguntas.length) {
-            // showModal(`Parabéns, ${nomeUsuario}! Você acertou todas as perguntas!`);
             victoryDiv.style.display = "block";
             victoryDiv.querySelector("img").style.display = "block"; // Mostra o GIF de vitória
             
         } else {
             lossDiv.style.display = "block";
             lossDiv.querySelector("img").style.display = "block"; // Mostra o GIF de perda
-            // showModal(`Que pena, ${nomeUsuario}. Tente novamente!`);
         }
 
         document.getElementById("quiz").style.display = "none"; // Esconde o quiz
